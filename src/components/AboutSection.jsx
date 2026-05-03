@@ -11,11 +11,11 @@ const achievements = [
   {
     icon: Trophy,
     rank: 'National',
-    category: 'Hackathon',
-    title: 'National Finalist',
-    event: 'Base Indonesia Hackathon 2025',
-    year: '2025',
-    description: 'Competed against top engineering teams nationwide, building a decentralized solution on the Base blockchain.',
+    category: 'Cybersecurity',
+    title: 'GoatGuard Security Platform',
+    event: 'Full-Stack AI Project',
+    year: '2026',
+    description: 'Designed and built GoatGuard, an AI-powered cybersecurity platform that performs real-time website and GitHub code analysis. The system detects vulnerabilities such as SQL Injection, XSS, and misconfigurations, while providing intelligent risk assessment, exploit probability, and actionable secure code fixes. Integrated advanced features like AI-driven insights, attack simulation (safe mode), subscription-based SaaS model, and admin analytics dashboard for monitoring users, scans, and revenue.',
   },
 ];
 

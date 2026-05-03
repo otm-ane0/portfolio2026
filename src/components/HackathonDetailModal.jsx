@@ -17,15 +17,15 @@ const galleryImages = [
     { src: '/hackathon-base/base-realms-1.webp', alt: 'Team Information & Project Roadmap' },
 ];
 
-const techStack = ['Solidity', 'Next.js', 'TypeScript', 'JavaScript', 'CSS'];
+const techStack = ['FastAPI', 'React', 'Tailwind CSS', 'MySQL', 'AI Models', 'Stripe'];
 
 const highlights = [
-    { icon: Gamepad2, label: '16-bit RPG Gameplay', desc: 'Platformer-inspired onchain battle game' },
-    { icon: Coins, label: 'QRIS Payment', desc: 'Scan & pay with Indonesian QRIS - crypto for everyone' },
-    { icon: Shield, label: 'Fair Randomness', desc: 'Commit-reveal mechanics for verifiable outcomes' },
-    { icon: Layers, label: 'ERC-721 + ERC-1155', desc: 'Unique characters & mintable/burnable items' },
-    { icon: Users, label: 'Social Onboarding', desc: 'Share progress on Farcaster & Base App' },
-    { icon: Zap, label: 'Multi-Currency', desc: 'Battle with ETH, USDC, or IDRX' },
+    { icon: Shield, label: 'Real-Time Scanning', desc: 'Scan websites instantly for vulnerabilities' },
+    { icon: Zap, label: 'AI Analysis', desc: 'Smart detection with exploit probability & confidence score' },
+    { icon: Layers, label: 'Code + URL Scan', desc: 'Analyze both live sites and GitHub repositories' },
+    { icon: Users, label: 'Multi-User SaaS', desc: 'User accounts, plans, and activity tracking' },
+    { icon: Trophy, label: 'Security Score', desc: 'Get a clear score and risk level for each target' },
+    { icon: Globe, label: 'Attack Simulation', desc: 'Safe testing without real exploitation' },
 ];
 
 const links = {
@@ -194,7 +194,7 @@ export default function HackathonDetailModal({ isOpen, onClose }) {
                                 <div className="flex items-center gap-3">
                                     <span className="font-mono text-[10px] uppercase font-bold tracking-[0.12em] md:tracking-[0.16em] text-[#000] flex items-center gap-2">
                                         <Trophy size={14} className="text-lime-500" />
-                                        National Finalist
+                                        AI Cybersecurity Platform
                                     </span>
                                 </div>
                                 <button
@@ -213,17 +213,16 @@ export default function HackathonDetailModal({ isOpen, onClose }) {
                             {/* Title block */}
                             <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
                                 <p className="font-mono text-[10px] font-bold uppercase tracking-[0.18em] md:tracking-[0.26em] text-black/40 mb-4">
-                                    Base Indonesia Hackathon 2025
+                                    Cybersecurity SaaS
                                 </p>
 
                                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase leading-[0.9] tracking-tighter text-black mb-6">
-                                    BASE <span className="text-transparent" style={{ WebkitTextStroke: '2px black' }}>REALMS</span>
-                                </h1>
+    GOAT<span className="text-transparent" style={{ WebkitTextStroke: '2px black' }}>GUARD</span>
+</h1>
 
-                                <p className="text-base md:text-lg leading-7 md:leading-8 text-black/60 max-w-2xl mx-auto">
-                                    An onchain 16-bit RPG battle game built on Base, where players mint characters, battle for seasonal rewards,
-                                    and onboard into crypto through QRIS - no DeFi knowledge required.
-                                </p>
+                               <p className="text-base md:text-lg leading-7 text-black/60 max-w-2xl mx-auto">
+    GoatGuard is an AI-powered cybersecurity platform that scans websites and source code in real-time to detect vulnerabilities like SQL Injection, XSS, and misconfigurations. It provides intelligent risk analysis, exploit probability, and ready-to-use secure code fixes.
+</p>
 
                                 {/* Action links */}
                                 <div className="mt-10 flex flex-wrap justify-center gap-4">
@@ -252,11 +251,10 @@ export default function HackathonDetailModal({ isOpen, onClose }) {
                                         <h2 className="text-xs font-mono font-bold uppercase tracking-[0.12em] md:tracking-[0.16em] text-black/40 mb-6 flex items-center gap-3">
                                             <span className="w-6 h-[1px] bg-black/20" /> The Problem
                                         </h2>
-                                        <p className="text-base leading-relaxed text-black/80">
-                                            Most onchain applications push users toward speculative behavior - participation is tightly coupled with price movements,
-                                            token volatility, and trading risk. NFT-based games amplify this with opaque reward mechanics where minting,
-                                            randomness, and payouts are blended into a single flow.
-                                        </p>
+                                      <p className="text-base leading-relaxed text-black/80">
+    Modern web applications are increasingly vulnerable to common security issues such as SQL Injection, XSS, and misconfigurations. 
+    Most developers lack the tools or expertise to identify and fix these vulnerabilities early, leading to data breaches, account takeovers, and financial loss.
+</p>
                                     </div>
 
                                     <div>
@@ -265,10 +263,12 @@ export default function HackathonDetailModal({ isOpen, onClose }) {
                                         </h2>
                                         <ul className="space-y-4">
                                             {[
-                                                'Clear asset ownership with ERC-721 characters & ERC-1155 items.',
-                                                'Minting for ownership, not gambling - fees go to liquidity, not RNG payouts.',
-                                                'Battles as the economic engine - value from skill, not speculation.',
-                                                'QRIS onboarding for non-crypto users - scan, play, and learn crypto naturally.'
+                                                'Automated vulnerability scanning for websites and APIs.',
+        'AI-powered analysis to reduce false positives and prioritize real risks.',
+        'Exploit probability scoring to understand actual danger.',
+        'Ready-to-use secure code fixes for developers.',
+        'GitHub repository scanning for code-level vulnerabilities.',
+        'Subscription-based SaaS model with real-time analytics dashboard.'
                                             ].map((item, i) => (
                                                 <li key={i} className="flex gap-4">
                                                     <span className="mt-1.5 shrink-0 block w-1.5 h-1.5 bg-lime-500 rounded-full" />
@@ -302,19 +302,7 @@ export default function HackathonDetailModal({ isOpen, onClose }) {
                             </div>
 
                             {/* Footer links */}
-                            <div className="max-w-5xl mx-auto border-t border-black/10 pt-12 flex flex-col md:flex-row items-center justify-between gap-6">
-                                <div className="flex items-center gap-3">
-                                    <span className="text-xs font-mono text-black/40 tracking-[0.12em] md:tracking-[0.16em]">TEAM:</span>
-                                    <div className="flex -space-x-2">
-                                        <div className="w-8 h-8 rounded-full bg-black flex items-center justify-center text-[10px] font-mono text-white ring-2 ring-[#FAF9F6]">FZ</div>
-                                        <div className="w-8 h-8 rounded-full bg-neutral-600 flex items-center justify-center text-[10px] font-mono text-white ring-2 ring-[#FAF9F6]">GA</div>
-                                    </div>
-                                </div>
-
-                                <div className="flex flex-wrap items-center gap-2">
-                                    {techStack.map(t => <TechBadge key={t}>{t}</TechBadge>)}
-                                </div>
-                            </div>
+                          
 
                         </div>
                     </Gsap.div>
