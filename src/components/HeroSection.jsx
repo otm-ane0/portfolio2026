@@ -454,7 +454,7 @@ const HeroSection = memo(function HeroSection({ isRevealed = true }) {
               View Projects <ArrowUpRight size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </button>
             <a
-              href="/cv.pdf"
+              href="/2026 CV.pdf"
               download
               className="group flex items-center gap-2 bg-transparent text-black border-2 border-black px-6 py-3 font-mono text-sm font-bold uppercase tracking-wider hover:bg-black hover:text-lime-400 transition-all duration-300"
             >
