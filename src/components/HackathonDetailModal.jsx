@@ -9,12 +9,12 @@ import {
 
 /* ─── Image data (compressed WebP) ───────── */
 const galleryImages = [
-    { src: '/hackathon-base/base-realms-3.webp', alt: 'Base Realms - Onchain Battle Game on Base App' },
-    { src: '/hackathon-base/base-realms-2.webp', alt: 'QRIS Adoption - Normies Friendly Onboarding' },
-    { src: '/hackathon-base/base-realms-5.webp', alt: 'Just 5 Steps to Play' },
-    { src: '/hackathon-base/base-realms-6.webp', alt: 'Trade Collectibles & Mint NFTs' },
-    { src: '/hackathon-base/base-realms-4.webp', alt: 'System Architecture & Flow' },
-    { src: '/hackathon-base/base-realms-1.webp', alt: 'Team Information & Project Roadmap' },
+    { src: '/hackathon-base/1.png', alt: 'Base Realms - Onchain Battle Game on Base App' },
+    { src: '/hackathon-base/Screenshot 2026-05-03 162515.png', alt: 'QRIS Adoption - Normies Friendly Onboarding' },
+    { src: '/hackathon-base/Screenshot 2026-05-03 162533.png', alt: 'Just 5 Steps to Play' },
+    { src: '/hackathon-base/Screenshot 2026-05-03 162547.png', alt: 'Trade Collectibles & Mint NFTs' },
+    { src: '/hackathon-base/Screenshot 2026-05-03 171445.png', alt: 'System Architecture & Flow' },
+    { src: '/hackathon-base/Screenshot 2026-05-03 171501.png', alt: 'Team Information & Project Roadmap' },
 ];
 
 const techStack = ['FastAPI', 'React', 'Tailwind CSS', 'MySQL', 'AI Models', 'Stripe'];
