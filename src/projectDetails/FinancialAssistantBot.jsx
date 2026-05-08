@@ -29,8 +29,8 @@ impact: [
 "Demonstrates real-world full-stack development skills in a production-ready e-commerce setup.",
 ],
   links: {
-    live: "https://t.me/zickrian_bot",
-    repo: "https://github.com/zickrian/Accounting-Assistant",
+    live: "https://fashion-ecommerce-six.vercel.app/",
+    repo: "https://github.com/otm-ane0/fashion-ecommerce",
   },
 };
 
