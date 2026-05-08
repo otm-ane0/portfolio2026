@@ -30,8 +30,8 @@ const highlights = [
 
 const links = {
     devfolio: 'https://devfolio.co/projects/base-realms-b63a',
-    github: 'https://github.com/zickrian/Base-Realms',
-    live: 'https://baserealms.app/',
+    github: 'https://github.com/otm-ane0',
+    live: '',
     docs: 'https://docs.google.com/document/d/1smjwXkiQOyB1mvwBO683Me2Dcbd6aGKBdlfJGjURSjU/edit?usp=sharing',
 };
 
