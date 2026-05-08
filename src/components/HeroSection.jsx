@@ -191,10 +191,10 @@ function useThreeBackground(canvasRef, reduceMotion) {
     scene.add(particles);
 
     // --- Animation Loop ---
-     const timer = new THREE.Timer();
+    const startTime = performance.now();
     const animate = () => {
       rafRef.current = requestAnimationFrame(animate);
-       const t = timer.getElapsed();
+      const t = (performance.now() - startTime) / 1000;
 
       knotWire.rotation.x = t * 0.16;
       knotWire.rotation.y = t * 0.20;
