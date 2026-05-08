@@ -45,7 +45,7 @@ export default function Home() {
   // Preload profile image (optimized WebP with JPEG fallback)
   useEffect(() => {
     const profileImg = new Image();
-    profileImg.src = "/profile.webp";
+    profileImg.src = "/otmane.jpeg";
   }, []);
 
   // Manage body overflow based on scroll lock
