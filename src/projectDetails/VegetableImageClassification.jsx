@@ -1,29 +1,30 @@
 import ProjectCaseLayout from "../components/projects/ProjectCaseLayout";
 
 export const project = {
-  title: "Vegetable Image Classification",
-  category: "Computer Vision",
-  heroImg: "https://res.cloudinary.com/demlxsf08/image/upload/v1766490523/klasifikasi_gambar_tlsouc.png",
+  title: "Dawn Shopify WebSite",
+  category: "full-Stack Development",
+  heroImg: "/h2o2.png",
   tagline:
-    "A TensorFlow-based image classification app that recognizes various vegetable types from uploaded photos, complete with confidence scores and Top-5 predictions in an interactive UI.",
-  year: "2025",
-  stack: ["TensorFlow / Keras", "Python", "Streamlit"],
-  features: [
-    "Simple image upload: supports drag & drop or file browse (JPG/JPEG/PNG) for instant classification.",
-    "Primary prediction + confidence score: displays classification results that are easy for users to understand.",
-    "Top-5 predictions: provides alternative predictions with score rankings for increased model transparency.",
-    "Confidence visualization: confidence level bars to clarify how certain the model is about its predictions.",
-    "Recognized class catalog: displays the list of vegetables the model can predict so users know the model's scope.",
-    "Responsive and clean UI: focused on user experience to make the ML demo feel like a real product.",
-  ],
-  impact: [
-    "Makes vegetable type identification from photos quick and easy - ideal for computer vision demos and AI education.",
-    "Builds user trust as prediction results are displayed transparently through confidence scores and Top-5 rankings.",
-    "Represents a complete end-to-end pipeline: from TensorFlow model training to deployment/inference in a web application.",
-  ],
+    "A modern web platform designed to provide a fast, responsive, and interactive user experience with clean UI, smooth navigation, and optimized performance for showcasing digital projects and creative content.",
+  year: "2026",
+  stack: ["Next.js", "TypeScript", "Gsap", "Tailwind CSS", ],
+ features: [
+"Simple and intuitive interface: allows users to easily navigate and interact with the platform without complexity.",
+"Fast performance: optimized for smooth loading and quick responses across all devices.",
+"Responsive design: fully adapts to mobile, tablet, and desktop screens for a consistent experience.",
+"Clean and modern UI: focused on simplicity and clarity to enhance user engagement.",
+"Project showcase system: enables users to present creative work in a structured and professional way.",
+"Interactive experience: designed to make browsing and exploring content more engaging and dynamic.",
+],
+ impact: [
+"Improves user experience by making interaction with the platform fast, simple, and intuitive across all devices.",
+"Enhances engagement through a clean and responsive UI that feels modern and professional.",
+"Strengthens project presentation by providing a structured way to showcase creative work effectively.",
+"Demonstrates practical implementation of front-end development skills in a real-world style web application.",
+],
   links: {
-    live: "https://vegetable-classifier.streamlit.app/",
-    repo: "https://github.com/zickrian/vegetable-classification",
+    live: "https://loss-two.vercel.app/",
+    repo: "https://github.com/otm-ane0/h2ofloss",
   },
 };
 

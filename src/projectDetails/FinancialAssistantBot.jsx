@@ -1,33 +1,33 @@
 import ProjectCaseLayout from "../components/projects/ProjectCaseLayout";
 
 export const project = {
-  title: "Financial Assistant Bot",
-  category: "AI / Fintech",
-  heroImg: "https://res.cloudinary.com/dujp9ydkx/image/upload/f_auto,q_auto/v1771095429/Screenshot_from_2026-02-15_01-49-09_q6icfy",
-  tagline:
-    "A personal AI-powered financial assistant on Telegram that automatically tracks expenses & income using RAG technology and OCR.",
-  year: "2026",
-  stack: [
-    "Python (aiogram)",
-    "Supabase (PostgreSQL + pgvector)",
-    "RAG (Retrieval-Augmented Generation)",
-    "LLM (Cerebras / OpenAI)",
-    "Docker & Render",
-    "Sentence Transformers",
-  ],
-  features: [
-    "Natural language input (text/voice) for instant transaction logging without complicated manual forms.",
-    "Advanced RAG Engine that learns user spending patterns for automatic category classification.",
-    "Double-entry Ledger system (Bank Core) to ensure balance accuracy and real-time budget tracking.",
-    "OCR integration to scan shopping receipts and automatically convert them into transaction data.",
-    "Smart clarification mechanism using interactive buttons when input is ambiguous or incomplete.",
-    "Periodic financial reports (daily/weekly/monthly) plus AI-based insights for savings recommendations.",
-  ],
-  impact: [
-    "Transforms boring manual financial record-keeping into natural and efficient conversations.",
-    "Provides full visibility into users' financial health through instant access in their everyday chat app.",
-    "Helps users make better financial decisions through accurate spending data analysis.",
-  ],
+  title: "Fashion E-Commerce Platform",
+category: "Full-Stack Web Development",
+heroImg: "/eco2.png",
+tagline:
+"A modern fashion e-commerce website that delivers a seamless shopping experience with a clean UI, fast performance, and responsive design across all devices.",
+year: "2026",
+stack: [
+"React / Next.js",
+"Tailwind CSS",
+"Node.js",
+"MongoDB",
+"Stripe / Payment Integration",
+"Vercel Deployment",
+],
+features: [
+"Product browsing with dynamic categories and filters for a smooth shopping experience.",
+"Responsive product pages optimized for mobile, tablet, and desktop devices.",
+"Shopping cart system with real-time updates and persistent state.",
+"Secure checkout flow with integrated payment gateway support.",
+"Modern UI design focused on fashion-oriented visuals and user engagement.",
+"Fast performance with optimized asset loading and server-side rendering.",
+],
+impact: [
+"Improves online shopping experience by making product discovery fast and intuitive.",
+"Increases user engagement through a visually appealing and modern interface.",
+"Demonstrates real-world full-stack development skills in a production-ready e-commerce setup.",
+],
   links: {
     live: "https://t.me/zickrian_bot",
     repo: "https://github.com/zickrian/Accounting-Assistant",

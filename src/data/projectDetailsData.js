@@ -191,8 +191,8 @@ export const PROJECT_DETAILS_DATA = {
     notes: "Access Restricted: This website is only accessible using Udinus student email (@mhs.dinus.ac.id).",
   },
   imageclas: {
-    title: "Vegetable Image Classification",
-    category: "Computer Vision",
+    title: "Dawn Shopify WebSite",
+    category: "Full-Stack Development",
     tagline:
       "A TensorFlow-based image classification app that recognizes various vegetable types from uploaded photos, complete with confidence scores and Top-5 predictions in an interactive UI.",
     year: "2025",

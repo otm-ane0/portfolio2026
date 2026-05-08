@@ -50,18 +50,18 @@ export const PROJECT_META = [
   {
     id: 7,
     slug: "imageclas",
-    title: "Vegetable Image Classification",
-    category: "Computer Vision",
+    title: "Dawn Shopify WebSite",
+    category: "full-Stack Development",
     color: "bg-green-400",
-    img: "https://res.cloudinary.com/demlxsf08/image/upload/v1766490520/Gemini_Generated_Image_s7woxks7woxks7wo_klw9jh.png",
+    img: "/h2o1.png",
   },
   {
     id: 8,
     slug: "financial-assistant-bot",
-    title: "Financial Assistant Bot",
-    category: "AI / Fintech",
+    title: "fashion e-commerce platform",
+    category: "ecommerce website",
     color: "bg-amber-400",
-    img: "https://res.cloudinary.com/dujp9ydkx/image/upload/f_auto,q_auto/v1771095470/demo_1_clhmqw",
+    img: "/eco1.png",
   },
 ];
 

@@ -55,7 +55,7 @@ export default function ProjectCaseLayout({
         {/* ── Hero Section ──────────────────────── */}
         <section className="max-w-4xl mx-auto text-center flex flex-col items-center px-6 md:px-10 pt-16 md:pt-20 pb-12">
           <p className="font-mono text-[10px] font-bold uppercase tracking-[0.18em] md:tracking-[0.26em] text-black/40 mb-4">
-            Project Case Study
+            Project
           </p>
 
           <Gsap.h1

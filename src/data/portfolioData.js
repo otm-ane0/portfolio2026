@@ -125,8 +125,8 @@ export const PORTFOLIO_DATA = {
         },
         {
             slug: "financial-assistant-bot",
-            title: "Financial Assistant Bot",
-            category: "AI / Fintech",
+            title: "fashion e-commerce platform",
+            category: "ecommerce website",
             description: "AI bot for personal finance management and advice."
         }
     ],
