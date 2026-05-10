@@ -9,12 +9,12 @@ import {
 
 /* ─── Image data (compressed WebP) ───────── */
 const galleryImages = [
-    { src: '/hackathon-base/1.png', alt: 'Base Realms - Onchain Battle Game on Base App' },
-    { src: '/hackathon-base/Screenshot 2026-05-03 162515.png', alt: 'QRIS Adoption - Normies Friendly Onboarding' },
-    { src: '/hackathon-base/Screenshot 2026-05-03 162533.png', alt: 'Just 5 Steps to Play' },
-    { src: '/hackathon-base/Screenshot 2026-05-03 162547.png', alt: 'Trade Collectibles & Mint NFTs' },
-    { src: '/hackathon-base/Screenshot 2026-05-03 171445.png', alt: 'System Architecture & Flow' },
-    { src: '/hackathon-base/Screenshot 2026-05-03 171501.png', alt: 'Team Information & Project Roadmap' },
+    { src: '/Goat/1.png', alt: 'Base Realms - Onchain Battle Game on Base App' },
+    { src: '/Goat/Screenshot 2026-05-03 162515.png', alt: 'QRIS Adoption - Normies Friendly Onboarding' },
+    { src: '/Goat/Screenshot 2026-05-03 162533.png', alt: 'Just 5 Steps to Play' },
+    { src: '/Goat/Screenshot 2026-05-03 162547.png', alt: 'Trade Collectibles & Mint NFTs' },
+    { src: '/Goat/Screenshot 2026-05-03 171445.png', alt: 'System Architecture & Flow' },
+    { src: '/Goat/Screenshot 2026-05-03 171501.png', alt: 'Team Information & Project Roadmap' },
 ];
 
 const techStack = ['FastAPI', 'React', 'Tailwind CSS', 'MySQL', 'AI Models', 'Stripe'];
@@ -73,7 +73,6 @@ function ImageCarousel() {
 
     return (
         <div className="relative w-full">
-            {/* Main image container */}
             <div
                 className="relative bg-neutral-100 overflow-hidden aspect-video border border-black/10 rounded-[2px]"
                 onTouchStart={(e) => { touchStart.current = e.touches[0].clientX; }}
@@ -105,7 +104,6 @@ function ImageCarousel() {
                     </Gsap.div>
                 </GsapPresence>
 
-                {/* Nav arrows - Minimal styling */}
                 <button
                     onClick={(e) => { e.stopPropagation(); go(-1); }}
                     className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/50 backdrop-blur-md rounded-full shadow-sm flex items-center justify-center hover:bg-white text-black/60 hover:text-black transition-all"
@@ -121,13 +119,11 @@ function ImageCarousel() {
                     <ChevronRight size={20} strokeWidth={2} />
                 </button>
 
-                {/* Counter */}
                 <div className="absolute bottom-4 right-4 z-10 bg-black/40 backdrop-blur-md text-white px-3 py-1.5 rounded-full font-mono text-[10px] tracking-[0.12em] md:tracking-[0.16em] backdrop-saturate-150">
                     {String(current + 1).padStart(2, '0')} / {String(len).padStart(2, '0')}
                 </div>
             </div>
 
-            {/* Thumbnail strip */}
             <div className="flex gap-2 mt-4 overflow-x-auto pb-2 scrollbar-hide">
                 {galleryImages.map((img, i) => (
                     <button
@@ -147,8 +143,7 @@ function ImageCarousel() {
 }
 
 /* ─── Main Modal ────────────────────────────────────────── */
-export default function HackathonDetailModal({ isOpen, onClose }) {
-    // Lock body scroll
+export default function GoatGuard({ isOpen, onClose }) {
     useEffect(() => {
         if (!isOpen) return;
         const prev = document.body.style.overflow;
@@ -156,7 +151,6 @@ export default function HackathonDetailModal({ isOpen, onClose }) {
         return () => { document.body.style.overflow = prev; };
     }, [isOpen]);
 
-    // Escape key
     useEffect(() => {
         if (!isOpen) return;
         const handler = (e) => { if (e.key === 'Escape') onClose(); };
@@ -168,7 +162,6 @@ export default function HackathonDetailModal({ isOpen, onClose }) {
         <GsapPresence>
             {isOpen && (
                 <div className="fixed inset-0 z-[9999] flex items-center justify-center p-0 md:p-6 lg:p-10">
-                    {/* Backdrop */}
                     <Gsap.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -178,7 +171,6 @@ export default function HackathonDetailModal({ isOpen, onClose }) {
                         onClick={onClose}
                     />
 
-                    {/* Modal content */}
                     <Gsap.div
                         initial={{ opacity: 0, y: 30, scale: 0.98 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -188,7 +180,6 @@ export default function HackathonDetailModal({ isOpen, onClose }) {
                         className="relative z-10 w-full h-full md:h-auto md:max-h-[90vh] max-w-6xl bg-[#FAF9F6] shadow-2xl md:rounded-lg overflow-y-auto overscroll-contain flex flex-col"
                         onClick={(e) => e.stopPropagation()}
                     >
-                        {/* ── Sticky header ─────────────────────── */}
                         <div className="sticky top-0 z-40 bg-[#FAF9F6]/90 backdrop-blur-md border-b border-black/5">
                             <div className="px-6 md:px-10 py-4 flex items-center justify-between">
                                 <div className="flex items-center gap-3">
@@ -207,24 +198,20 @@ export default function HackathonDetailModal({ isOpen, onClose }) {
                             </div>
                         </div>
 
-                        {/* ── Content body ──────────────────────── */}
                         <div className="px-6 md:px-10 pt-8 pb-20 space-y-16">
-
-                            {/* Title block */}
                             <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
                                 <p className="font-mono text-[10px] font-bold uppercase tracking-[0.18em] md:tracking-[0.26em] text-black/40 mb-4">
                                     Cybersecurity SaaS
                                 </p>
 
                                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase leading-[0.9] tracking-tighter text-black mb-6">
-    GOAT<span className="text-transparent" style={{ WebkitTextStroke: '2px black' }}>GUARD</span>
-</h1>
+                                    GOAT<span className="text-transparent" style={{ WebkitTextStroke: '2px black' }}>GUARD</span>
+                                </h1>
 
-                               <p className="text-base md:text-lg leading-7 text-black/60 max-w-2xl mx-auto">
-    GoatGuard is an AI-powered cybersecurity platform that scans websites and source code in real-time to detect vulnerabilities like SQL Injection, XSS, and misconfigurations. It provides intelligent risk analysis, exploit probability, and ready-to-use secure code fixes.
-</p>
+                                <p className="text-base md:text-lg leading-7 text-black/60 max-w-2xl mx-auto">
+                                    GoatGuard is an AI-powered cybersecurity platform that scans websites and source code in real-time to detect vulnerabilities like SQL Injection, XSS, and misconfigurations. It provides intelligent risk analysis, exploit probability, and ready-to-use secure code fixes.
+                                </p>
 
-                                {/* Action links */}
                                 <div className="mt-10 flex flex-wrap justify-center gap-4">
                                     <a href={links.live} target="_blank" rel="noreferrer"
                                         className="bg-lime-400 text-black px-8 py-3.5 font-bold uppercase text-xs tracking-wider hover:bg-black hover:text-white transition-all duration-300 rounded-[2px] flex items-center gap-2">
@@ -237,24 +224,20 @@ export default function HackathonDetailModal({ isOpen, onClose }) {
                                 </div>
                             </div>
 
-                            {/* Image gallery */}
                             <div className="max-w-5xl mx-auto border border-black/5 p-2 bg-white rounded-lg shadow-sm">
                                 <ImageCarousel />
                             </div>
 
-                            {/* Content grid */}
                             <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20">
-
-                                {/* Problem & Solution */}
                                 <div className="space-y-12">
                                     <div>
                                         <h2 className="text-xs font-mono font-bold uppercase tracking-[0.12em] md:tracking-[0.16em] text-black/40 mb-6 flex items-center gap-3">
                                             <span className="w-6 h-[1px] bg-black/20" /> The Problem
                                         </h2>
-                                      <p className="text-base leading-relaxed text-black/80">
-    Modern web applications are increasingly vulnerable to common security issues such as SQL Injection, XSS, and misconfigurations. 
-    Most developers lack the tools or expertise to identify and fix these vulnerabilities early, leading to data breaches, account takeovers, and financial loss.
-</p>
+                                        <p className="text-base leading-relaxed text-black/80">
+                                            Modern web applications are increasingly vulnerable to common security issues such as SQL Injection, XSS, and misconfigurations.
+                                            Most developers lack the tools or expertise to identify and fix these vulnerabilities early, leading to data breaches, account takeovers, and financial loss.
+                                        </p>
                                     </div>
 
                                     <div>
@@ -264,11 +247,11 @@ export default function HackathonDetailModal({ isOpen, onClose }) {
                                         <ul className="space-y-4">
                                             {[
                                                 'Automated vulnerability scanning for websites and APIs.',
-        'AI-powered analysis to reduce false positives and prioritize real risks.',
-        'Exploit probability scoring to understand actual danger.',
-        'Ready-to-use secure code fixes for developers.',
-        'GitHub repository scanning for code-level vulnerabilities.',
-        'Subscription-based SaaS model with real-time analytics dashboard.'
+                                                'AI-powered analysis to reduce false positives and prioritize real risks.',
+                                                'Exploit probability scoring to understand actual danger.',
+                                                'Ready-to-use secure code fixes for developers.',
+                                                'GitHub repository scanning for code-level vulnerabilities.',
+                                                'Subscription-based SaaS model with real-time analytics dashboard.'
                                             ].map((item, i) => (
                                                 <li key={i} className="flex gap-4">
                                                     <span className="mt-1.5 shrink-0 block w-1.5 h-1.5 bg-lime-500 rounded-full" />
@@ -279,7 +262,6 @@ export default function HackathonDetailModal({ isOpen, onClose }) {
                                     </div>
                                 </div>
 
-                                {/* Highlights */}
                                 <div>
                                     <h2 className="text-xs font-mono font-bold uppercase tracking-[0.12em] md:tracking-[0.16em] text-black/40 mb-6 flex items-center gap-3">
                                         <span className="w-6 h-[1px] bg-black/20" /> Key Features
@@ -300,9 +282,6 @@ export default function HackathonDetailModal({ isOpen, onClose }) {
                                     </div>
                                 </div>
                             </div>
-
-                            {/* Footer links */}
-                          
 
                         </div>
                     </Gsap.div>

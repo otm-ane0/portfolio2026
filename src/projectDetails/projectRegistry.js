@@ -8,8 +8,8 @@ const PROJECT_DETAIL_COMPONENTS = {
   floodsegmen: lazy(() => import("./InventoryManagementApplication")),
   qmeal: lazy(() => import("./EventManagementApplication")),
   lostandfound: lazy(() => import("./ExamPreparationPlatform")),
-  imageclas: lazy(() => import("./VegetableImageClassification")),
-  "financial-assistant-bot": lazy(() => import("./FinancialAssistantBot")),
+  imageclas: lazy(() => import("./DawnShopifyWebsite")),
+  "financial-assistant-bot": lazy(() => import("./FashionECommercePlatform")),
 };
 
 export function getProjectRouteConfig(slug) {

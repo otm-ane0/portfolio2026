@@ -2,7 +2,7 @@ import { memo, useState, lazy, Suspense } from 'react';
 import { Gsap } from '../utils/gsapAnimate';
 import { Trophy, ArrowUpRight, MapPin } from 'lucide-react';
 
-const HackathonDetailModal = lazy(() => import('./HackathonDetailModal'));
+const HackathonDetailModal = lazy(() => import('./GoatGuard'));
 
 /* ─────────────────────────────────────────
    Static data

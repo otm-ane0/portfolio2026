@@ -1,157 +1,124 @@
 export const PORTFOLIO_DATA = {
     profile: {
-        name: "Firdaus Khotibul Zickrian",
-        role: "AI Engineer & Full-Stack Developer",
-        bio: "Passionate about building intelligent systems that learn, adapt, and solve complex problems. Specializing in Generative AI, Deep Learning, and Modern Web Technologies.",
-        location: "Indonesia",
-        email: "firdauskhotibulzickrian@gmail.com",
+        name: "Hammadi Otmane",
+        role: "Full Stack Developer | AI & Data Engineer",
+        bio: "Développeur Full Stack et étudiant en informatique, spécialisé en développement web, intelligence artificielle et analyse des données. Motivé à intégrer une entreprise dynamique afin de mettre en pratique mes compétences techniques en Python, Web et Deep Learning, et développer continuellement mon expertise professionnelle.",
+        location: " Maroc",
+        email: "hammadiotmane21@gmail.com",
+        phone: "+212 6 33 70 04 18",
+        website: "https://otmanehammadi.dev/",
         socials: {
-            github: "https://github.com/zickrian",
-            linkedin: "https://linkedin.com/in/firdauskhotibulzickrian/"
+            github: "https://github.com/otm-ane0",
+            linkedin: "https://www.linkedin.com/in/otmane-hammadi-00b5ba356/"
         }
     },
     experience: [
         {
-            title: "Google Developer Student Club - Universitas Dian Nuswantoro",
-            period: "Nov 2023 - Nov 2025",
+            title: "Développeur Full Stack",
+            company: "Upwork (Brésil)",
+            period: "2025 - 3 mois",
             description: [
-                "Actively participating in developer community events, workshops, and collaborative study sessions.",
-                "Contributed to 5+ community discussions across 4 projects, sharing insights on development and analytics."
+                "Développement d'un système d'achat et téléchargement de questions mathématiques.",
+                "Intégration MercadoPago pour la gestion des crédits.",
+                "Recherche avancée avec filtres et panneau d'administration.",
+                "Génération PDF/Word avec rendu LaTeX (MathJax) et sécurité d'affichage."
             ]
         },
         {
-            title: "Data Analyst - Blockvizo",
-            period: "Jun 2024 - Jul 2025",
+            title: "Gestion de Stock",
+            company: "WEPCO - Fès, Maroc",
+            period: "10/2024 - 02/2025",
             description: [
-                "Processed 50,000+ game hash history records, examining item drop patterns and building probability-based prediction models that improved forecasting accuracy by 35%.",
-                "Delivered actionable insights through data visualization dashboards, supporting strategic decisions for decentralized projects and reducing analysis time by 40%.",
-                "Specializing in predictive airdrop and winning probability analysis by examining large-scale on-chain data from 10+ Web3 ecosystems"
+                "Suivi et gestion des stocks via application dédiée.",
+                "Gestion des commandes, réceptions et inventaires.",
+                "Coordination avec la production et la logistique."
             ]
         },
         {
-            title: "Lab Assistant - Programming Lab, Universitas Dian Nuswantoro",
-            period: "Aug 2025 - Present",
+            title: "Application de Gestion de Stock",
+            company: "Abdou de Construction - Fès, Maroc",
+            period: "07/2023 - 01/2024",
             description: [
-                "Assisted in over 3 academic lab sessions per week for programming and software development courses.",
-                "Mentored around 110 junior students by guiding them through practical exercises and foundational programming concepts."
+                "Gestion des entrées/sorties et suivi des matériaux.",
+                "Création des bons de commande et gestion des fournisseurs.",
+                "Suivi des livraisons et optimisation du stock."
             ]
         },
         {
-            title: "Machine Learning Cohort - ASAH (led by Dicoding x Accenture)",
-            period: "Aug 2025 - Jan 2026",
+            title: "Application de Gestion des Événements",
+            company: "Al Akhawayn University - Ifrane, Maroc",
+            period: "03/2023 - 04/2023",
             description: [
-                "Served as Project Manager, leading a cross-functional team of 5 machine learning engineers and React developers to build solutions addressing real-world business problems.",
-                "Managing the development of a banking sales prediction portal that improves sales efficiency by prioritizing high-probability leads and reducing time wasted on low-potential prospects.",
-                "Coordinated project timelines, technical discussions, and workflow execution across departments, improving team time efficiency by 70% and ensuring on-time delivery."
-            ]
-        },
-        {
-            title: "AI Engineer Cohort - PIJAK (led by Dicoding x IBM)",
-            period: "Jan 2026 - Present",
-            description: [
-                "Selected as one of the top talents for an intensive AI Engineering bootcamp focusing on Generative AI, Deep Learning, and Ethics.",
-                "Developing advanced AI solutions using Python, applying industry-standard practices from IBM SkillsBuild curriculum.",
-                "Collaborating on a capstone project to solve real-world challenges through innovative Artificial Intelligence implementation."
+                "Création et gestion des événements et inscriptions.",
+                "Organisation par catégories et filtrage des événements.",
+                "Système de gestion d'accès utilisateur."
             ]
         }
     ],
     techStack: [
+        { name: "HTML", category: "Frontend" },
+        { name: "CSS", category: "Frontend" },
+        { name: "Bootstrap", category: "Frontend Framework" },
+        { name: "Tailwind CSS", category: "Frontend Framework" },
+        { name: "JavaScript", category: "Language" },
+        { name: "React", category: "Frontend Framework" },
+        { name: "Node.js", category: "Backend" },
+        { name: "PHP", category: "Language" },
+        { name: "Laravel", category: "Backend Framework" },
         { name: "Python", category: "Language" },
-        { name: "TensorFlow", category: "Deep Learning" },
-        { name: "PyTorch", category: "Deep Learning" },
-        { name: "React", category: "Frontend" },
-        { name: "Next.js", category: "Frontend" },
-        { name: "Tailwind CSS", category: "Frontend" },
-        { name: "PostgreSQL", category: "Database" },
-        { name: "Supabase", category: "Backend" },
-        { name: "Docker", category: "DevOps" },
-        { name: "MLOps", category: "Machine Learning Operations" },
-        { name: "Scikit-Learn", category: "Machine Learning" },
-        { name: "OpenCV", category: "Computer Vision" },
-        { name: "FastAPI", category: "Backend" },
-        { name: "Streamlit", category: "ML Deployment" },
-        { name: "Pandas", category: "Data Analysis" },
-        { name: "Matplotlib", category: "Visualization" },
-        { name: "Seaborn", category: "Visualization" },
-        { name: "Keras", category: "Deep Learning" },
-        { name: "Numpy", category: "Data Science" },
-        { name: "Google Gemini", category: "LLM / GenAI" },
-        { name: "RAG", category: "AI Architecture" },
-        { name: "ExpressJS", category: "Backend" },
-        { name: "Microsoft Azure", category: "Cloud" }
+        { name: "Deep Learning", category: "AI/ML" },
+        { name: "Natural Language Processing (NLP)", category: "AI/ML" },
+        { name: "Computer Vision", category: "AI/ML" },
+        { name: "Data Analysis", category: "Data Science" },
+        { name: "MercadoPago", category: "Payment Integration" },
+        { name: "LaTeX", category: "Document Processing" },
+        { name: "MathJax", category: "Math Rendering" }
     ],
     projects: [
         {
-            slug: "diabetes-classification",
-            title: "Diabetes Classification",
-            category: "AI / Machine Learning",
-            description: "Machine Learning model to classify diabetes risk based on medical data."
+            slug: "math-questions-platform",
+            title: "Système d'Achat et Téléchargement de Questions Mathématiques",
+            category: "Full Stack Development",
+            description: "Plateforme de trading de questions mathématiques avec intégration MercadoPago, recherche avancée, génération PDF/Word et rendu LaTeX."
         },
         {
-            slug: "iknettoyage",
-            title: "IK Nettoyage",
-            category: "Front-End Development / UI & UX Design",
-            description: "Redesigned and developed a modern, responsive website for a cleaning services company to improve online presence, build trust, and increase lead generation."
-        },
-        {
-            slug: "polsekrembang",
-            title: "Polsek Rembang Virtual Assistant",
-            category: "RAG Chatbot / AI Assistant",
-            description: "RAG-based chatbot to assist with police station inquiries and services."
-        },
-        {
-            slug: "floodsegmen",
-            title: "Flood Segmentation Analyzer",
-            category: "Computer Vision",
-            description: "Computer Vision system for analyzing flood patterns and segmentation from satellite/drone imagery."
-        },
-        {
-            slug: "qmeal",
-            title: "QMeal E-Kantin",
-            category: "Multi-Vendor Ordering Platform",
-            description: "Digital canteen ordering system supporting multiple vendors and efficient queue management."
-        },
-        {
-            slug: "lostandfound",
-            title: "SITEMU Lost & Found Portal",
+            slug: "stock-management-wepco",
+            title: "Application de Gestion de Stock WEPCO",
             category: "Web Application",
-            description: "Community platform for reporting and finding lost items."
+            description: "Système complet de suivi et gestion des stocks avec gestion des commandes, réceptions et inventaires."
         },
         {
-            slug: "imageclas",
-            title: "Vegetable Image Classification",
-            category: "Computer Vision",
-            description: "Deep Learning model for classifying different types of vegetables from images."
+            slug: "stock-management-abdou",
+            title: "Application de Gestion de Stock Abdou Construction",
+            category: "Web Application",
+            description: "Gestion des matériaux, bons de commande, fournisseurs et suivi des livraisons."
         },
         {
-            slug: "financial-assistant-bot",
-            title: "fashion e-commerce platform",
-            category: "ecommerce website",
-            description: "AI bot for personal finance management and advice."
+            slug: "event-management",
+            title: "Application de Gestion des Événements",
+            category: "Web Application",
+            description: "Système de création, gestion et inscription aux événements avec organisation par catégories et filtrage."
         }
     ],
     achievements: [
         {
-            title: "National Finalist - Base Indonesia Hackathon 2025",
-            project: "Base Realms",
-            description: "Built an onchain 16-bit RPG battle game on Base chain with QRIS payment integration, ERC-721/ERC-1155 NFTs, and seasonal reward pools. Onboards non-crypto users through familiar payment methods.",
-            team: "Terra Bit (Firdaus Khotibul Zickrian & Gagah Athallah Fatha)",
-            track: "Base Track",
-            techStack: ["Solidity", "Next.js", "TypeScript", "JavaScript", "CSS"],
-            links: {
-                devfolio: "https://devfolio.co/projects/base-realms-b63a",
-                github: "https://github.com/zickrian/Base-Realms",
-                live: "https://baserealms.app/"
-            }
+            title: "Licence Professionnelle en Artificial Intelligence & Data Science",
+            project: "ESMC Informatique",
+            description: "Formation spécialisée en IA et Science des Données (2025-2026)",
+            team: "Étudiant",
+            track: "AI & Data Science",
+            techStack: ["Python", "Machine Learning", "Data Analysis"]
         }
     ],
     capabilities: [
-        "Machine Learning",
+        "Full Stack Development",
+        "Web Development (Frontend & Backend)",
         "Deep Learning",
-        "Computer Vision",
         "Natural Language Processing (NLP)",
-        "Machine Learning Operations (MLOps)",
+        "Computer Vision",
         "Data Analysis",
-        "Web Development"
+        "Database Management",
+        "Payment Integration",
+        "E-Commerce Development"
     ]
 };
